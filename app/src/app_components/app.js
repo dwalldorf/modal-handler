@@ -1,3 +1,3 @@
 'use strict';
 
-console.log('here');
+angular.module('modalHandler', []);
