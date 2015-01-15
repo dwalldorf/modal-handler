@@ -4,7 +4,9 @@ var module = angular.module('modalHandler', ['ui.bootstrap']);
 
 module.service('ModalService', ['$modal', '$timeout', function ($modal, $timeout) {
 
-        var modals = [];
+        var modals = [],
+            errorModal;
+
 
         function open(options) {
             var modal = $modal.open(options);
@@ -27,6 +29,21 @@ module.service('ModalService', ['$modal', '$timeout', function ($modal, $timeout
             return modal;
         }
 
+        function showError(options) {
+            errorModal = modal.opened.then(function () {
+                $timeout(function () {
+                    var focusElem = angular.element('[autofocus]');
+
+                    if (focusElem && focusElem.length > 0) {
+                        var selectionRange = focusElem.val().length * 2;
+
+                        focusElem.focus();
+                        focusElem[0].setSelectionRange(selectionRange, selectionRange);
+                    }
+                }, 100);
+            });
+        }
+
         function close(modal) {
             modal.close();
         }
@@ -42,6 +59,7 @@ module.service('ModalService', ['$modal', '$timeout', function ($modal, $timeout
 
         return {
             open: open,
+            showError: showError,
             close: close,
             closeAll: closeAll
         };
