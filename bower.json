@@ -1,0 +1,26 @@
+{
+    "name": "modal-handler",
+    "version": "0.0.1-SNAPSHOT",
+    "homepage": "https://github.com/dwalldorf/modal-handler",
+    "description": "Advanced handler for bootstrap modals",
+    "main": "app/index.html",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "^2.1.1",
+        "angular": "^1.3.3",
+        "bootstrap": "^3.3.1",
+        "angular-translate": "^2.4.2",
+        "angular-translate-loader-static-files": "^2.4.2",
+        "angular-bootstrap": "~0.12.0"
+    },
+    "devDependencies": {
+        "angular-mocks": "^1.2.15"
+    }
+}
