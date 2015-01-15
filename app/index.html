@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html data-ng-app="modalHandler">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible"
@@ -20,7 +21,7 @@
 <!-- endbuild -->
 <body>
 
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<div data-ng-controller="ModalController"></div>
 
 <!-- build:js scripts/scripts.js -->
 <!-- bower:js -->
@@ -33,6 +34,8 @@
 <!-- endbower -->
 
 <script src="src/app_components/app.js"></script>
+<script src="src/app_components/controllers/ModalController.js"></script>
+<script src="src/app_components/handlers/ModalHandler.js"></script>
 <!-- endbuild -->
 
 </body>

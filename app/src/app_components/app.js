@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('modalHandler', []);
+angular.module('modalHandler', ['ui.bootstrap']);
