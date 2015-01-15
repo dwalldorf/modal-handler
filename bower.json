@@ -4,7 +4,7 @@
     "homepage": "https://github.com/dwalldorf/modal-handler",
     "description": "Advanced handler for bootstrap modals",
     "main": "app/index.html",
-    "private": true,
+    "private": false,
     "ignore": [
         "**/.*",
         "node_modules",

@@ -48,21 +48,9 @@ module.exports = function (grunt) {
             // development related
             connect: {
                 options: {
-                    port: 8800,
-                    hostname: '0.0.0.0',
-                    middleware: function (connect, options) {
-                        var middlewares = [];
-
-                        // Setup the proxy
-                        middlewares.push(require('grunt-connect-proxy/lib/utils').proxyRequest);
-                        // Serve static files
-                        options.base.forEach(function (base) {
-                            middlewares.push(connect.static(base));
-                        });
-                        return middlewares;
-                    }
+                    port: 8900,
+                    hostname: '0.0.0.0'
                 },
-                keepalive: true,
                 proxies: {
                     context: '/api',
                     host: 'localhost',
@@ -75,14 +63,14 @@ module.exports = function (grunt) {
                     options: {
                         base: ['<%= app.appDir %>'],
                         open: true,
-                        livereload: 35729
+                        livereload: 35730
                     }
                 },
                 dist: {
                     options: {
                         base: ['<%= app.distDir %>'],
                         open: true,
-                        livereload: 35729
+                        livereload: 35730
                     }
                 }
             },
@@ -90,27 +78,27 @@ module.exports = function (grunt) {
                 html: {
                     files: ['<%= app.appDir %>/**/*.html'],
                     options: {
-                        livereload: true
+                        livereload: 35730
                     }
                 },
                 less: {
                     files: '<%= app.appDir %>/static/less/**/*.less',
                     tasks: ['less'],
                     options: {
-                        livereload: true
+                        livereload: 35730
                     }
                 },
                 i18n: {
                     files: '<%= app.appDir %>/static/i18n/*.json',
                     options: {
-                        livereload: true
+                        livereload: 35730
                     }
                 },
                 jshint: {
                     files: ['<%= app.appDir %>/**/*.js', 'Gruntfile.js', '.jshintrc'],
                     tasks: ['jshint'],
                     options: {
-                        livereload: true
+                        livereload: 35730
                     }
                 }
             },
