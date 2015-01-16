@@ -3,7 +3,6 @@
 app/src/bower_components/
 .vagrant/
 .tmp/
-dist/
 .DS_Store
 **/node_modules/
 app/static/less/fonts/
