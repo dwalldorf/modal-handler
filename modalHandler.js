@@ -29,20 +29,8 @@ module.service('ModalService', ['$modal', '$timeout', function ($modal, $timeout
             return modal;
         }
 
-        function showError(title, msg) {
-            console.log('showing error');
-            errorModal = $modal.open({
-                controller: 'ErrorModalController',
-                templateUrl: 'src/app_components/views/modal.html',
-                resolve: {
-                    title: function () {
-                        return title;
-                    },
-                    msg: function () {
-                        return msg;
-                    }
-                }
-            });
+        function showError(options) {
+            errorModal = $modal.open(options);
         }
 
         function close(modal) {

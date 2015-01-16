@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('modalHandler')
-    .controller('ErrorModalController', ['$scope', function ($scope) {
+    .controller('ErrorModalController', ['$scope', 'ModalService', function ($scope, modalService) {
 
         $scope.closeModal = function () {
             console.log('closing modal');
-            modalHandler.closeAll();
+            modalService.closeAll();
         };
     }]
 );

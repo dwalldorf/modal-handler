@@ -3,7 +3,7 @@
     "version": "0.0.1-SNAPSHOT",
     "homepage": "https://github.com/dwalldorf/modal-handler",
     "description": "Advanced handler for bootstrap modals",
-    "main": "app/index.html",
+    "main": "app/src/app_components/app.js",
     "private": false,
     "ignore": [
         "**/.*",
