@@ -1,8 +1,7 @@
 'use strict';
 
-var module = angular.module('modalHandler', ['ui.bootstrap']);
-
-module.service('ModalService', ['$modal', '$timeout', function ($modal, $timeout) {
+angular.module('modalHandler', ['ui.bootstrap'])
+    .service('ModalService', ['$modal', '$timeout', function ($modal, $timeout) {
 
         var modals = [],
             errorModal;
