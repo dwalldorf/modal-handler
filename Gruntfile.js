@@ -208,10 +208,6 @@ module.exports = function (grunt) {
         'less',
         'bowerInstall',
         'useminPrepare',
-        'concat',
-        'uglify',
-        'cssmin',
-        'rev',
         'usemin',
         'htmlmin'
     ]);
