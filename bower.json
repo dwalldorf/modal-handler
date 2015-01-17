@@ -1,9 +1,9 @@
 {
-    "name": "modal-handler",
+    "name": "bootstrap-modal-handler",
     "version": "0.0.1-SNAPSHOT",
     "homepage": "https://github.com/dwalldorf/modal-handler",
     "description": "Advanced handler for bootstrap modals",
-    "main": "dist/scripts/scripts.js",
+    "main": "app/src/app.js",
     "private": false,
     "ignore": [
         "**/.*",
