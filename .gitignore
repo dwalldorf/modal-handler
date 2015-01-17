@@ -1,6 +1,6 @@
 .idea/
 *.iml
-app/src/bower_components/
+app/bower_components/
 .vagrant/
 .tmp/
 .DS_Store
